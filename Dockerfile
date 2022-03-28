@@ -1,7 +1,5 @@
 FROM ubuntu:20.04
-FROM rootgamer/ttld:latest
 
-COPY ..
 
 RUN mkdir ./app
 RUN chmod 777 ./app
@@ -12,8 +10,8 @@ ENV TZ=Asia/Kolkata
 
 RUN apt -qq update --fix-missing && \
     apt -qq install -y git \
-    wget \
     aria2 \
+    wget \
     curl \
     busybox \
     unzip \

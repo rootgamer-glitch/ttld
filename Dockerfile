@@ -1,4 +1,4 @@
-FROM rootgamer/ttld:latest
+FROM rootgamer/magn3to:latest
 
 COPY ..
 
